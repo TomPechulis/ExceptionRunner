@@ -6,7 +6,9 @@
 3)Asserts the execution for the given executable that throws an exception and returns the exception.
 
 4)a. The serialVersionUID is a unique identifier for Serializable classes that is used during the desrialization of an object to make sure that a loaded class is compatible with the serialized object.
+
 b. We need to override contsructors because unlike the @Before tag, constructors force you to call the parent class constructors and exceptions in the constructor dont cause the @After methods to be called.
+
 c. The parent class handles the other methods, so we dont need to for those methods. This lets the parent class functionality to work in the subclass.
 
 5)The static block is ran once every time the class is loaded into memory. It is useful for setting up the logging since it would then apply to every instance of that class.
