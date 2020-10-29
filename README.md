@@ -20,8 +20,10 @@
 I fixed this issue by just removing the finally statement since it causes the null value to still be used in the method, when it shouldnt be. 
 
 8) The actual issue here is that a nullpointerException is not handled when it should be.
-
-
+9)
+![GitHub Logo](~/JUnitTests.png)
+10)
+![GitHub Logo](~/MVNtests.png)
 
 11) A TimerException extends Exception which makes it a checked exception. 
 A NullPointerException extends RuntimeException which makes it an unchecked exception.
