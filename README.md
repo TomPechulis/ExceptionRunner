@@ -6,13 +6,14 @@
 3)Asserts the execution for the given executable that throws an exception and returns the exception.
 
 4) 
-	1. The serialVersionUID is a unique identifier for Serializable classes that is used during the desrialization of an object to make sure that a loaded class is compatible with the serialized object.
 
-	2. We need to override contsructors because unlike the @Before tag, constructors force you to call the parent class constructors and exceptions in the constructor dont cause the @After methods to be called.
-	3. The parent class handles the other methods, so we dont need to for those methods. This lets the parent class functionality to work in the subclass.
+a. The serialVersionUID is a unique identifier for Serializable classes that is used during the desrialization of an object to make sure that a loaded class is compatible with the serialized object.
+
+b. We need to override contsructors because unlike the @Before tag, constructors force you to call the parent class constructors and exceptions in the constructor dont cause the @After methods to be called.
+
+c. The parent class handles the other methods, so we dont need to for those methods. This lets the parent class functionality to work in the subclass.
 
 5) The static block is ran once every time the class is loaded into memory. It is useful for setting up the logging since it would then apply to every instance of that class.
-
 
 6)The .md file format means that the file is a Markown file. Markdown has its own sytanx and when it comes to the README.md in BitBucket, it can also contain a restricted set of HTML tags.
 
@@ -20,6 +21,7 @@
 I fixed this issue by just removing the finally statement since it causes the null value to still be used in the method, when it shouldnt be. 
 
 8) The actual issue here is that a nullpointerException is not handled when it should be.
+
 9)
 ![Branching](JUnitTests.png)
 
